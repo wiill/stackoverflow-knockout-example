@@ -1,16 +1,12 @@
 ﻿(function(App){
-
-	/**
-	 * MockedStatisticService definition
-	 */
     App.MockedStatisticService = function(){
-        var self = {};
-        var defaultStatistic = {
+        var self = {},
+        defaultStatistic = {
             ToursTotal: 505,
             ToursRunning: 110,
             ToursCompleted: 115 
-        };
-		var currentStatistic = $.extend({}, defaultStatistic);
+        },
+		currentStatistic = $.extend({}, defaultStatistic);;
 
         self.mockStatistic = function(statistics){
             currentStatistic = $.extend({}, defaultStatistic, statistics);
