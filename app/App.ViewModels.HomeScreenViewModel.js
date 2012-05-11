@@ -42,5 +42,6 @@
 	 */
 	App.ViewModels.AnotherViewModel = function(service){
 
-	}
+	};
+
 })(App);
